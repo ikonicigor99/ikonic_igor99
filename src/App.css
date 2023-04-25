@@ -27,7 +27,20 @@
 .App-link {
   color: #61dafb;
 }
-
+.progress_wrapper{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+.progress_bar{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #FFF2CC;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +49,4 @@
     transform: rotate(360deg);
   }
 }
+

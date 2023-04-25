@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { Header } from "./components/Header/Header";
+import { Home } from "./screens/Home/Home";
+import { About } from "./screens/About/About";
+import { useEffect } from "react";
+import { Skills } from "./screens/Skills/Skills";
+import { ContactMe } from "./screens/ContactMe/ContactMe";
+import { FirstScreen } from "./screens/FirstScreen/FirstScreen";
+import {
+  ProjectsScreen,
+  SecoundScreen,
+} from "./screens/ProjectsScreen/ProjectsScreen";
+import { Navigation } from "./navigation/navigation";
+import { VariantsBox } from "./components/variantsBox/VariantsBox";
 
 function App() {
+  const scroll = () => {
+    let pixelsFromTop = window.scrollY;
+    let documentHeight = document.body.clientHeight;
+    let windowHeight = window.innerHeight;
+    let difference = documentHeight - windowHeight;
+    let percentage = (100 * pixelsFromTop) / difference;
+    document.getElementById("bar").style.width = `${percentage}%`;
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scroll);
+    return () => window.removeEventListener("scroll", scroll);
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="progress_wrapper">
+        <div className="progress_bar" id="bar" />
+      </div>
+      <Header />
+      <Navigation />
+    </>
   );
 }
 
