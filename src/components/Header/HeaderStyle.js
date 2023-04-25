@@ -17,6 +17,7 @@ export const HolderHeader = styled.div`
     align-items: center;
     flex-direction: column;
     height: 100%;
+    width: 100%;
   }
   @media screen and (min-width: 425px) and (max-width: 768px) {
     width: 90%;
