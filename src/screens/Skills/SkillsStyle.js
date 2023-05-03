@@ -31,7 +31,7 @@ export const Image = styled.div`
     width: 90%;
   }
   img {
-    width: 98%;
+    width: 100%;
     height: 100%;
     border-radius: 10px;
     box-shadow: rgba(240, 46, 170, 0.4) 0px 0px 40px 2px;
