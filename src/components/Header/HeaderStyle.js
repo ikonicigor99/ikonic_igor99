@@ -20,15 +20,15 @@ export const HolderHeader = styled.div`
     width: 100%;
   }
   @media screen and (min-width: 425px) and (max-width: 768px) {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     height: 100%;
   }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 90%;
+    width: 100%;
   }
   .title {
-    width: 140px;
+    width: 180px;
     color: #fff;
     font-size: 25px;
     font-family: "Alegreya Sans SC", sans-serif;

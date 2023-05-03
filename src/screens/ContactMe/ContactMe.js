@@ -30,7 +30,7 @@ export const ContactMe = () => {
                   <div>{item.text}</div>
                 </Info>
               </HolderIcons>
-            ))}{" "}
+            ))}
           </HolderInfo>
         </HolderContact>
       </HolderContactMe>

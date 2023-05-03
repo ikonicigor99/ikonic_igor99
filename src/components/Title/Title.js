@@ -12,8 +12,8 @@ export const Title = ({ type, className, title }) => {
           </LeftTitle>
         ) : (
           <RightTitle>
-            <div className="titleRight">{title}</div>{" "}
             <div className="lineRight" />
+            <div className="titleRight">{title}</div>
           </RightTitle>
         )}
       </HolderTitle>

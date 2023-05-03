@@ -7,10 +7,7 @@ export const MainHolder = styled.div`
 export const HolderTitle = styled.div`
   display: flex;
   width: 1200px;
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 425px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     width: 100%;
   }
 
@@ -26,22 +23,17 @@ export const LeftTitle = styled.div`
   align-items: center;
   width: 100%;
 
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
   }
-  @media screen and (min-width: 425px) and (max-width: 768px) {
-    flex-direction: column;
-  }
+
   .titleLeft {
     color: #fff;
     font-size: 50px;
     font-family: "Alegreya Sans SC", sans-serif;
     font-weight: 700;
     padding-left: 30px;
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-      padding: 0;
-    }
-    @media screen and (min-width: 425px) and (max-width: 768px) {
+    @media screen and (min-width: 320px) and (max-width: 768px) {
       padding: 0;
     }
   }
@@ -57,10 +49,7 @@ export const RightTitle = styled.div`
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    flex-direction: column;
-  }
-  @media screen and (min-width: 425px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
   }
 
@@ -69,11 +58,8 @@ export const RightTitle = styled.div`
     font-size: 50px;
     font-family: "Alegreya Sans SC", sans-serif;
     font-weight: 700;
-    padding-right: 30px;
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-      padding: 0;
-    }
-    @media screen and (min-width: 425px) and (max-width: 768px) {
+    padding-left: 30px;
+    @media screen and (min-width: 320px) and (max-width: 768px) {
       padding: 0;
     }
   }

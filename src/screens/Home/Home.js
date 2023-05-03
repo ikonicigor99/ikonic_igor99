@@ -11,7 +11,6 @@ import { VariantsBox } from "../../components/variantsBox/VariantsBox";
 export const Home = () => {
   return (
     <MainHolder>
-      {" "}
       <VariantsBox>
         <HolderHomeScreen>
           <HomeContent>
