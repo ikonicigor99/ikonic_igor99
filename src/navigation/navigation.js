@@ -8,7 +8,7 @@ export const Navigation = () => {
     <div>
       <Routes location={location}>
         <Route path="/" element={<FirstScreen />} />
-        <Route path="/projectScreen" element={<ProjectsScreen />} />
+        {/* <Route path="/projectScreen" element={<ProjectsScreen />} /> */}
       </Routes>
     </div>
   );

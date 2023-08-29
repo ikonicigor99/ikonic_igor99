@@ -28,11 +28,11 @@ export const HolderHeader = styled.div`
     width: 100%;
   }
   .title {
-    width: 180px;
-    color: #fff;
-    font-size: 25px;
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-weight: 400;
+    color: #555555;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+
     @media screen and (min-width: 320px) and (max-width: 768px) {
       text-align: center;
       font-size: 30px;

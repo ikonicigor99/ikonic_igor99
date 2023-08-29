@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
-import profileImage from "../../assets/myImage.jpeg";
+import profileImage from "../../assets/me.jpeg";
+
 export const MainHolder = styled.div`
   display: flex;
   justify-content: center;
@@ -10,6 +11,7 @@ export const HolderHomeScreen = styled.div`
   justify-content: center;
   width: 1200px;
   height: 412px;
+  margin: 30px 0px;
   @media screen and (min-width: 320px) and (max-width: 425px) {
     height: 100%;
     width: 100%;
@@ -25,7 +27,7 @@ export const HomeContent = styled.div`
   width: 70%;
   display: flex;
   justify-content: space-between;
-  padding: 40px 0px;
+  align-items: center;
   @media screen and (min-width: 320px) and (max-width: 768px) {
     align-items: center;
     flex-direction: column;
@@ -50,31 +52,32 @@ const animate = keyframes`
 `;
 
 export const MyImage = styled.div`
-  width: 260px;
-  height: 260px;
+  width: 390px;
+  height: 390px;
   background-image: url(${profileImage});
   background-position: center;
   background-size: 100%;
   //   box-shadow: 0px 0px 2px white;
-  animation: ${animate} 5s ease-in-out infinite;
+  // animation: ${animate} 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
-  border-radius: 90px;
+  background-repet: no-repet;
+  border-radius: 50%;
   border: 1px solid #fff;
   padding: 2px;
   @media screen and (min-width: 320px) and (max-width: 425px) {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
     margin: 20px 0px;
   }
   @media screen and (min-width: 425px) and (max-width: 768px) {
-    width: 220px;
-    height: 220px;
+    width: 320px;
+    height: 520px;
     margin: 10px 0px;
   }
 `;
 
 export const MyIntroduction = styled.div`
-  width: 55%;
+  width: 50%;
   div {
     @media screen and (min-width: 320px) and (max-width: 768px) {
       display: flex;
@@ -94,10 +97,11 @@ export const MyIntroduction = styled.div`
   }
 
   .title {
-    font-size: 70px;
-    color: #fff;
-    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 1.1rem;
+    color: #555555;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
+    text-align: center;
     @media screen and (min-width: 320px) and (max-width: 425px) {
       font-size: 40px;
       text-align: center;
@@ -107,11 +111,22 @@ export const MyIntroduction = styled.div`
       text-align: center;
     }
   }
+  .name {
+    font-size: 3.9rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0px;
+  }
   .desc {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #fff;
     font-family: "Alegreya Sans SC", sans-serif;
     font-weight: 300;
+    color: #555555;
+    font-weight: 500;
+    text-align: center;
+
     @media screen and (min-width: 320px) and (max-width: 425px) {
       font-size: 25px;
       text-align: center;
@@ -121,17 +136,11 @@ export const MyIntroduction = styled.div`
       text-align: center;
     }
   }
-  .line {
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    transform: rotate(-4deg);
-    margin-top: 15px;
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-      width: 295px;
-    }
-    @media screen and (min-width: 425px) and (max-width: 768px) {
-      width: 350px;
-    }
-  }
+`;
+export const HolderBtns = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0px;
 `;

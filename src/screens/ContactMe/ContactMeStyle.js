@@ -1,65 +1,41 @@
 import styled from "styled-components";
 
 export const MainHolder = styled.div`
-  width: 100%;
   display: flex;
   justify-content: center;
-`;
-export const HolderContactMe = styled.div`
-  display: flex;
   flex-direction: column;
-  width: 1200px;
-  align-items: center;
-  height: 412px;
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    height: 100%;
-    width: 90%;
-    padding: 20px 0px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 90%;
-  }
+  height: 70vh;
 `;
-export const HolderContact = styled.div`
+export const MainContactInfoContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 52%;
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    width: 100%;
-  }
-  div {
-    color: #fff;
-    font-weight: 700;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    padding: 50px 0px;
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      padding: 20px 0px;
-      text-align: center;
-      font-size: 15px;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+
+  .contactInfoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+    img {
+      height: 2rem;
     }
-  }
-`;
-export const HolderInfo = styled.div`
-  width: 100%;
-  display: flex;
-  div {
-    padding: 0;
-  }
-`;
-export const HolderIcons = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-`;
-export const Icons = styled.div``;
-export const Info = styled.div`
-  div {
-    font-size: 16px;
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-      font-size: 14px;
+    a {
+      color: black;
+      text-decoration: none;
+      text-decoration-color: white;
+      transition: all 300ms ease;
+      :hover {
+        color: grey;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: rgb(181, 181, 181);
+      }
     }
   }
 `;

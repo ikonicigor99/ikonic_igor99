@@ -1,19 +1,44 @@
 import React from "react";
-import { MainHolder, HolderAbout, AboutMe } from "./AboutStyle";
+import {
+  MainHolder,
+  HolderAbout,
+  AboutMe,
+  MyImg,
+  AboutDetailsContainer,
+} from "./AboutStyle";
 import { Title } from "../../components/Title/Title";
+import experienceIcon from "../../assets/icons/experience.png";
+import educationIcon from "../../assets/icons/education.png";
 export const About = () => {
   return (
     <MainHolder>
       <HolderAbout>
-        <Title type="leftTitle" title="About" className="leftTitle" />
+        <Title titleOne="Get To Know More" titleTwo="About Me" />
         <AboutMe>
           <div>
-            Willingness to work and learn new things, curiosity and readiness
-            for teamwork are what I am prepared for and would like to share with
-            the company that chooses me to be part of their team. As a junior, I
-            have built a portfolio that demonstrates my current capabilities,
-            and I would be delighted to share it with you.
+            <MyImg />
           </div>
+          <AboutDetailsContainer>
+            <div className="about-containers">
+              <div className="details-container">
+                <img src={experienceIcon} />
+                <h3>Experience</h3>
+                <p>1 year Frontend Development</p>
+              </div>
+              <div className="details-container">
+                <img src={educationIcon} />
+                <h3>Education</h3>
+                <p>Higher Education Technical School of Professional Studies</p>
+              </div>
+            </div>
+            <div className="text-container">
+              Willingness to work and learn new things, curiosity and readiness
+              for teamwork are what I am prepared for and would like to share
+              with the company that chooses me to be part of their team. As a
+              junior, I have built a portfolio that demonstrates my current
+              capabilities, and I would be delighted to share it with you.
+            </div>
+          </AboutDetailsContainer>
         </AboutMe>
       </HolderAbout>
     </MainHolder>

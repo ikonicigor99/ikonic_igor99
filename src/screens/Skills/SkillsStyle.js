@@ -1,39 +1,88 @@
 import styled from "styled-components";
-
-export const MainHolder = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
+export const Experience = styled.div`
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
 `;
-export const HolderSkills = styled.div`
+export const ExperienceDetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  align-items: center;
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    height: 100%;
-    width: 100%;
-    padding: 20px 0px 50px 0px;
+  justify-content: center;
+`;
+export const AboutContainers = styled.div`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+`;
+export const FrontendDetails = styled.div`
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+
+  .experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 90%;
+  .article-frontend {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+
+    article {
+      display: flex;
+      width: 10rem;
+      justify-content: space-around;
+      gap: 0.5rem;
+
+      img {
+        height: 2rem;
+      }
+    }
   }
 `;
-export const Image = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  padding: 50px 0px;
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    width: 90%;
+export const OtherDetails = styled.div`
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+
+  .experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 90%;
+  .article-other {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
   }
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: rgba(240, 46, 170, 0.4) 0px 0px 40px 2px;
+  article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+
+    img {
+      height: 2rem;
+    }
   }
 `;

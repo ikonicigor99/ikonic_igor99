@@ -2,20 +2,26 @@ import styled from "styled-components";
 
 export const MainHolder = styled.div`
   display: flex;
+  justify-content: center;
   width: 100%;
 `;
 export const HolderTitle = styled.div`
   display: flex;
   width: 1200px;
+  flex-direction: column;
+  align-items: center;
   @media screen and (min-width: 320px) and (max-width: 768px) {
     width: 100%;
   }
 
-  &.leftTitle {
-    display: flex;
+  .titleOne {
+    font-size: 17px;
+    color: #555555;
   }
-  &.rightTitle {
-    display: flex;
+  .titleTwo {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
   }
 `;
 export const LeftTitle = styled.div`
