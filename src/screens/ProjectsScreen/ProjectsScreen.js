@@ -1,77 +1,37 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import {
-  MainHolder,
-  HolderMenu,
-  Menu,
-  HolderProject,
-  Projects,
-  HolderImage,
-  HolderLinks,
-  GitIcon,
-  DomainIcon,
-} from "./ProjectsScreenStyle";
-import { projects } from "../../DammyData";
-import dooMozis from "../../assets/Screenshot_3.png";
-import smWeb from "../../assets/Screenshot_2.png";
-import { VariantsBox } from "../../components/variantsBox/VariantsBox";
+import { MainHolder, ProjectsDetailsContainer } from "./ProjectsScreenStyle";
+import { projects } from "../../DummyData";
+import { Title } from "../../components/Title/Title";
+import { Button } from "../../components/Button/Button";
 export const ProjectsScreen = () => {
   const project = localStorage.getItem("DOO MOZIS");
   const [activeClass, setActiveClass] = useState(project);
-
   const changeProject = (name) => {
     setActiveClass(name);
     localStorage.setItem("DOO MOZIS", name);
   };
   return (
-    <VariantsBox>
-      <MainHolder>
-        <HolderMenu>
-          {projects.map((item, index) => (
-            <Menu key={index}>
-              <div className="line" />
-              <div
-                onClick={() => changeProject(item.name)}
-                className={activeClass === item.name ? "activeClass" : "option"}
-              >
-                {item.name}
+    <MainHolder id="projectPage">
+      <Title titleOne="Browse My Recent" titleTwo="Projects" />
+      <ProjectsDetailsContainer>
+        <div className="project-containers">
+          {projects.map((item) => (
+            <>
+              {" "}
+              <div className="project-container">
+                <div className="article-container">
+                  <img src={require("../../assets/" + [item.image])} />
+                </div>
+                <h2>{item.name}</h2>
+                <div className="btn-container">
+                  <Button type="transp" text="GitHub" />
+                  <Button type="transp" text="Live Demo" />
+                </div>
               </div>
-            </Menu>
+            </>
           ))}
-        </HolderMenu>
-        <HolderProject>
-          <Projects>
-            <HolderImage>
-              <img src={activeClass === "DOO MOZIS" ? dooMozis : smWeb} />
-            </HolderImage>
-            <HolderLinks>
-              <div className="holderGitCard">
-                <GitIcon />
-                <Link className="gitLink" to="https://github.com/ikonicigor99">
-                  https://github.com/ikonicigor99
-                </Link>
-              </div>
-              <div className="vercelProject">
-                <DomainIcon />
-                {activeClass === "DOO MOZIS" ? (
-                  <Link
-                    className="domainLink"
-                    to="https://doo-mozis.vercel.app/"
-                  >
-                    https://doo-mozis.vercel.app/
-                  </Link>
-                ) : (
-                  <>
-                    <Link className="domainLink" to="https://smweb.vercel.app/">
-                      https://smweb.vercel.app/
-                    </Link>
-                  </>
-                )}
-              </div>
-            </HolderLinks>
-          </Projects>
-        </HolderProject>
-      </MainHolder>
-    </VariantsBox>
+        </div>
+      </ProjectsDetailsContainer>
+    </MainHolder>
   );
 };

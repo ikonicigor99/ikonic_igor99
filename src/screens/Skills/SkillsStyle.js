@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const Experience = styled.div`
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;

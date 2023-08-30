@@ -1,11 +1,11 @@
 import React from "react";
 import { MainHolder, MainContactInfoContainer } from "./ContactMeStyle";
 import { Title } from "../../components/Title/Title";
-import { contactInfo } from "../../DammyData";
+import { contactInfo } from "../../DummyData";
 import emailIcon from "../../assets/icons/email.png";
 export const ContactMe = () => {
   return (
-    <MainHolder>
+    <MainHolder id="contactPage">
       <Title titleOne="Get in Touch" titleTwo="Contact Me" />
       <MainContactInfoContainer>
         <div className="contactInfoContainer">

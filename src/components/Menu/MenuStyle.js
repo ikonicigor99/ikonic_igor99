@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const MainHolder = styled.div`
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  width: 80%;
   @media screen and (min-width: 320px) and (max-width: 425px) {
     align-items: center;
     flex-direction: column;
@@ -21,19 +21,17 @@ export const HolderMenu = styled.div`
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    :nth-child(2) {
-      padding-left: 10px;
-    }
   }
 `;
 
 export const HolderOptions = styled.div`
-  div {
-    color: #b0a4a4;
+  .options {
+    color: #000;
     cursor: pointer;
-  }
-  .activeClass {
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    gap: 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    font-family: "Poppins", sans-serif;
   }
 `;

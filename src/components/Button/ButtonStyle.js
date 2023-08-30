@@ -21,7 +21,7 @@ export const Btn = styled.div`
   }
   .buttonTwo {
     border: 1px solid white;
-    padding: 20px;
+    padding: 1rem;
     border-radius: 30px;
     background-color: #353535;
     color: white;

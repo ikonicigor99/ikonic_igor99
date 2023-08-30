@@ -3,7 +3,6 @@ export const MainHolder = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 20px;
   @media screen and (min-width: 320px) and (max-width: 425px) {
     padding-top: 10px;
   }
@@ -28,10 +27,10 @@ export const HolderHeader = styled.div`
     width: 100%;
   }
   .title {
-    color: #555555;
+    color: #000;
     font-size: 35px;
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 
     @media screen and (min-width: 320px) and (max-width: 768px) {
       text-align: center;

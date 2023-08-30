@@ -7,7 +7,7 @@ import {
   MyIntroduction,
   HolderBtns,
 } from "./HomeStyle";
-import { TitleAboutMe } from "../../DammyData";
+import { TitleAboutMe } from "../../DummyData";
 import { VariantsBox } from "../../components/variantsBox/VariantsBox";
 import { Button } from "../../components/Button/Button";
 export const Home = () => {

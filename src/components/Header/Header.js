@@ -8,7 +8,7 @@ export const Header = () => {
       <VariantsBox>
         <HolderHeader>
           <div className="title">Igor Ikonić</div>
-          {/* <Menu /> */}
+          <Menu />
         </HolderHeader>
       </VariantsBox>
     </MainHolder>

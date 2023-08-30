@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import myImg from "../../assets/about-pic.png";
-
+import arrowIcon from "../../assets/icons/arrow.png";
 export const MainHolder = styled.div`
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  position: relative;
 `;
 
 export const HolderAbout = styled.div`
@@ -27,7 +27,6 @@ export const AboutMe = styled.div`
   display: flex;
   gap: 4rem;
   height: 80%;
-
   @media screen and (min-width: 320px) and (max-width: 768px) {
     width: 90%;
     padding-top: 10px;
@@ -44,6 +43,16 @@ export const AboutMe = styled.div`
       text-align: center;
       font-size: 15px;
     }
+  }
+  .toExperiancePage {
+    width: 30px;
+    height: 30px;
+    background-image: url(${arrowIcon});
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: -90px;
   }
 `;
 export const MyImg = styled.div`

@@ -7,10 +7,10 @@ import {
   OtherDetails,
 } from "./SkillsStyle";
 import { Title } from "../../components/Title/Title";
-import { skillsOne, skillsTwo } from "../../DammyData";
+import { skillsOne, skillsTwo } from "../../DummyData";
 export const Skills = () => {
   return (
-    <Experience>
+    <Experience id="skillsPage">
       <Title titleOne="Explore My" titleTwo="Experience" />
       <ExperienceDetailsContainer>
         <AboutContainers>

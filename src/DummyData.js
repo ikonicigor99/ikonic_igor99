@@ -3,9 +3,11 @@ import { ReactComponent as LinkedinIcon } from "./assets/icons/linkedinIcon.svg"
 // import { ReactComponent as Instagram } from "./assets/icons/instagram.png";
 import NS from "./assets/Screenshot_2.png";
 export const Header = [{ title: "Igor Ikonic" }];
-export const Menue = [
-  { name: "about", path: "/" },
-  { name: "work & projects", path: "projectScreen" },
+export const MenuOption = [
+  { option: "About", href: "#aboutPage" },
+  { option: "Experience", href: "#skillsPage" },
+  { option: "Projects", href: "#projectPage" },
+  { option: "Contact", href: "#contactPage" },
 ];
 export const TitleAboutMe = [
   {
@@ -20,8 +22,9 @@ export const contactInfo = [
   // { icon: <Instagram />, text: "Ikonic99" },
 ];
 export const projects = [
-  { name: "SM WEB", path: "SM WEB", image: "Screenshot_2.png" },
-  { name: "SM WEB", path: "SM WEB", image: "Screenshot_2.png" },
+  { name: "LA COLLECTION", path: "LA COLLECTION", image: "Screenshot_2.png" },
+  { name: "SM WEB", path: "SM WEB", image: "Screenshot_4.png" },
+  { name: "WEATHER ", path: "WEATHER", image: "Screenshot_1.png" },
 ];
 export const skillsOne = [
   { name: "HTML", img: "checkmark.png", experience: "Experienced" },

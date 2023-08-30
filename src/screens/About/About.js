@@ -9,9 +9,10 @@ import {
 import { Title } from "../../components/Title/Title";
 import experienceIcon from "../../assets/icons/experience.png";
 import educationIcon from "../../assets/icons/education.png";
+import { HashLink as Link } from "react-router-hash-link";
 export const About = () => {
   return (
-    <MainHolder>
+    <MainHolder id="aboutPage">
       <HolderAbout>
         <Title titleOne="Get To Know More" titleTwo="About Me" />
         <AboutMe>
@@ -37,8 +38,9 @@ export const About = () => {
               with the company that chooses me to be part of their team. As a
               junior, I have built a portfolio that demonstrates my current
               capabilities, and I would be delighted to share it with you.
-            </div>
+            </div>{" "}
           </AboutDetailsContainer>
+          <Link to="#skillsPage" className="toExperiancePage" smooth={true} />
         </AboutMe>
       </HolderAbout>
     </MainHolder>
