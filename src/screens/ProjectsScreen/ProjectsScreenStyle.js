@@ -1,10 +1,22 @@
 import styled from "styled-components";
+import arrowIcon from "../../assets/icons/arrow.png";
 
 export const MainHolder = styled.div`
   padding-top: 4vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  position: relative;
+  .toContactPage {
+    width: 30px;
+    height: 30px;
+    background-image: url(${arrowIcon});
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: -90px;
+  }
 `;
 export const ProjectsDetailsContainer = styled.div`
   display: flex;
@@ -26,7 +38,7 @@ export const ProjectsDetailsContainer = styled.div`
       text-align: center;
       border-color: rgb(163, 163, 163);
       background: rgb(250, 250, 250);
-      filter: brightness(0.8);
+      filter: brightness(0.9);
 
       .article-container {
         display: flex;

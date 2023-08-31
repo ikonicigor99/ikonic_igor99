@@ -8,6 +8,7 @@ import {
 } from "./SkillsStyle";
 import { Title } from "../../components/Title/Title";
 import { skillsOne, skillsTwo } from "../../DummyData";
+import { HashLink as Link } from "react-router-hash-link";
 export const Skills = () => {
   return (
     <Experience id="skillsPage">
@@ -43,6 +44,7 @@ export const Skills = () => {
             </div>
           </OtherDetails>
         </AboutContainers>
+        <Link to="#projectPage" className="toProjectPage" smooth={true} />
       </ExperienceDetailsContainer>
     </Experience>
   );

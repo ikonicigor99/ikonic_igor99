@@ -4,12 +4,7 @@ export const MainHolder = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 80%;
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    align-items: center;
-    flex-direction: column;
-  }
-  @media screen and (min-width: 425px) and (max-width: 768px) {
-    justify-content: center;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
   }
 `;
 export const HolderMenu = styled.div`

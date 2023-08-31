@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import myImg from "../../assets/about-pic.png";
+import myImg from "../../assets/myProfile.jpeg";
 import arrowIcon from "../../assets/icons/arrow.png";
 export const MainHolder = styled.div`
   padding-top: 4vh;
@@ -22,28 +22,6 @@ export const HolderAbout = styled.div`
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     width: 90%;
   }
-`;
-export const AboutMe = styled.div`
-  display: flex;
-  gap: 4rem;
-  height: 80%;
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    width: 90%;
-    padding-top: 10px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 90%;
-  }
-  div {
-    color: #fff;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      text-align: center;
-      font-size: 15px;
-    }
-  }
   .toExperiancePage {
     width: 30px;
     height: 30px;
@@ -53,6 +31,25 @@ export const AboutMe = styled.div`
     position: absolute;
     bottom: 0px;
     right: -90px;
+  }
+`;
+export const AboutMe = styled.div`
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  div {
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    // @media screen and (min-width: 320px) and (max-width: 768px) {
+    //   text-align: center;
+    //   font-size: 15px;
+    // }
   }
 `;
 export const MyImg = styled.div`

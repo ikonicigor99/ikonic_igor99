@@ -57,6 +57,8 @@ export const MyImage = styled.div`
   background-image: url(${profileImage});
   background-position: center;
   background-size: 100%;
+  background-repeat: no-repeat;
+
   //   box-shadow: 0px 0px 2px white;
   // animation: ${animate} 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
@@ -64,15 +66,12 @@ export const MyImage = styled.div`
   border-radius: 50%;
   border: 1px solid #fff;
   padding: 2px;
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    width: 280px;
-    height: 280px;
-    margin: 20px 0px;
-  }
-  @media screen and (min-width: 425px) and (max-width: 768px) {
-    width: 320px;
-    height: 520px;
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    width: 400px;
+    height: 400px;
     margin: 10px 0px;
+    background-repeat: no-repeat;
   }
 `;
 
@@ -94,6 +93,7 @@ export const MyIntroduction = styled.div`
     width: 90%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   .title {

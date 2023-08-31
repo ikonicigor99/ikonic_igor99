@@ -4,7 +4,7 @@ import { MenuOption } from "../../DummyData";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
-export const Menu = () => {
+export const Menu = (className) => {
   // const page = localStorage.getItem("/");
   // const [activeClass, setActiveClass] = useState(page);
   // let navigate = useNavigate();

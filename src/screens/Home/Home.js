@@ -27,8 +27,14 @@ export const Home = () => {
                 </div>
               ))}
               <HolderBtns>
-                <Button type="transp" text="Download CV" />
-                <Button text="Contact Info" />
+                <Button
+                  type="transp"
+                  text="Download CV"
+                  url={
+                    "file:///C:/Users/centar/Desktop/Igor%20Ikonic%20CV%20.pdf"
+                  }
+                />
+                <Button text="Contact Info" className="footerMenu" />
               </HolderBtns>
             </MyIntroduction>
           </HomeContent>

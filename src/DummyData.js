@@ -22,9 +22,24 @@ export const contactInfo = [
   // { icon: <Instagram />, text: "Ikonic99" },
 ];
 export const projects = [
-  { name: "LA COLLECTION", path: "LA COLLECTION", image: "Screenshot_2.png" },
-  { name: "SM WEB", path: "SM WEB", image: "Screenshot_4.png" },
-  { name: "WEATHER ", path: "WEATHER", image: "Screenshot_1.png" },
+  {
+    name: "LA COLLECTION",
+    path: "LA COLLECTION",
+    image: "Screenshot_2.png",
+    url: "https://emart-project.vercel.app/",
+  },
+  {
+    name: "SM WEB",
+    path: "SM WEB",
+    image: "Screenshot_4.png",
+    url: "https://smweb.vercel.app/",
+  },
+  {
+    name: "WEATHER ",
+    path: "WEATHER",
+    image: "Screenshot_1.png",
+    url: "https://weather-project-theta-beryl.vercel.app/",
+  },
 ];
 export const skillsOne = [
   { name: "HTML", img: "checkmark.png", experience: "Experienced" },

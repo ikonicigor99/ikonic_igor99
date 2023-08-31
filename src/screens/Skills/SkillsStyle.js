@@ -1,20 +1,37 @@
 import styled from "styled-components";
+import arrowIcon from "../../assets/icons/arrow.png";
+
 export const Experience = styled.div`
   padding-top: 4vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  position: relative;
 `;
 export const ExperienceDetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  .toProjectPage {
+    width: 30px;
+    height: 30px;
+    background-image: url(${arrowIcon});
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: -90px;
+  }
 `;
 export const AboutContainers = styled.div`
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
   gap: 2rem;
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 export const FrontendDetails = styled.div`
   padding: 1.5rem;
