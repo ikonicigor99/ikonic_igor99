@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import myImg from "../../assets/myProfile.jpeg";
 import arrowIcon from "../../assets/icons/arrow.png";
 export const MainHolder = styled.div`
   padding-top: 4vh;
@@ -7,21 +6,17 @@ export const MainHolder = styled.div`
   box-sizing: border-box;
   min-height: fit-content;
   position: relative;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    margin: 0px 20px;
+  }
 `;
 
 export const HolderAbout = styled.div`
-  // display: flex;
-  // flex-direction: column;
-  // width: 1200px;
-  // align-items: center;
-  // height: 360px;
   @media screen and (min-width: 320px) and (max-width: 768px) {
     height: 100%;
     padding: 20px 0px 50px 0px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 90%;
-  }
+
   .toExperiancePage {
     width: 30px;
     height: 30px;
@@ -31,6 +26,10 @@ export const HolderAbout = styled.div`
     position: absolute;
     bottom: 0px;
     right: -90px;
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
   }
 `;
 export const AboutMe = styled.div`
@@ -39,6 +38,7 @@ export const AboutMe = styled.div`
   height: 80%;
   @media screen and (min-width: 320px) and (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
   }
 
   div {
@@ -54,13 +54,23 @@ export const AboutMe = styled.div`
 `;
 export const MyImg = styled.div`
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 275px;
+  width: 275px;
   margin: auto 0;
-  background-image: url(${myImg});
-  background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 8%;
+  img {
+    border-radius: 2rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
 `;
 export const AboutDetailsContainer = styled.div`
   display: flex;
@@ -72,6 +82,11 @@ export const AboutDetailsContainer = styled.div`
 
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 320px) and (max-width: 375px) {
+      flex-direction: column;
+      margin: 0;
+    }
   }
   .details-container {
     padding: 1.5rem;
@@ -98,5 +113,8 @@ export const AboutDetailsContainer = styled.div`
   }
   .text-container {
     color: rgb(85, 85, 85);
+    @media screen and (max-width: 600px) {
+      text-align: justify;
+    }
   }
 `;

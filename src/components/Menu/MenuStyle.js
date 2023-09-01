@@ -5,6 +5,7 @@ export const MainHolder = styled.div`
   justify-content: flex-end;
   width: 80%;
   @media screen and (min-width: 320px) and (max-width: 768px) {
+    display: none;
   }
 `;
 export const HolderMenu = styled.div`

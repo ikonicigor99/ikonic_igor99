@@ -7,6 +7,9 @@ export const Experience = styled.div`
   box-sizing: border-box;
   min-height: fit-content;
   position: relative;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    margin: 0;
+  }
 `;
 export const ExperienceDetailsContainer = styled.div`
   display: flex;
@@ -21,6 +24,9 @@ export const ExperienceDetailsContainer = styled.div`
     position: absolute;
     bottom: 0px;
     right: -90px;
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      display: none;
+    }
   }
 `;
 export const AboutContainers = styled.div`

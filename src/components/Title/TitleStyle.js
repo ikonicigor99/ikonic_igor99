@@ -10,28 +10,23 @@ export const HolderTitle = styled.div`
   width: 1200px;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    width: 100%;
-  }
 
   .titleOne {
-    font-size: 17px;
     color: #555555;
   }
   .titleTwo {
     font-size: 3rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
 `;
 export const LeftTitle = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    flex-direction: column;
-  }
 
   .titleLeft {
     color: #fff;
@@ -55,9 +50,6 @@ export const RightTitle = styled.div`
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    flex-direction: column;
-  }
 
   .titleRight {
     color: #fff;

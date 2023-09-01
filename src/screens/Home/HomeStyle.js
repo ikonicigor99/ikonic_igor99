@@ -10,17 +10,9 @@ export const HolderHomeScreen = styled.div`
   display: flex;
   justify-content: center;
   width: 1200px;
-  height: 412px;
   margin: 30px 0px;
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    height: 100%;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
     width: 100%;
-  }
-  @media screen and (min-width: 425px) and (max-width: 768px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    width: 90%;
   }
 `;
 export const HomeContent = styled.div`
@@ -29,12 +21,7 @@ export const HomeContent = styled.div`
   justify-content: space-between;
   align-items: center;
   @media screen and (min-width: 320px) and (max-width: 768px) {
-    align-items: center;
     flex-direction: column;
-    width: 90%;
-    padding: 10px 0px 50px 0px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
     width: 100%;
   }
 `;
@@ -67,49 +54,31 @@ export const MyImage = styled.div`
   border: 1px solid #fff;
   padding: 2px;
 
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    width: 400px;
-    height: 400px;
-    margin: 10px 0px;
-    background-repeat: no-repeat;
+  @media screen and (max-width: 600px) {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+  @media screen and (max-width:1200px){
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+}
   }
 `;
 
 export const MyIntroduction = styled.div`
   width: 50%;
-  div {
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  @media screen and (min-width: 320px) and (max-width: 768px) {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
 
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    width: 100%;
+  }
   .title {
     font-size: 1.1rem;
     color: #555555;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     text-align: center;
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-      font-size: 40px;
-      text-align: center;
-    }
-    @media screen and (min-width: 425px) and (max-width: 768px) {
-      font-size: 50px;
-      text-align: center;
-    }
   }
   .name {
     font-size: 3.9rem;
@@ -117,6 +86,9 @@ export const MyIntroduction = styled.div`
     font-weight: 700;
     text-align: center;
     padding: 10px 0px;
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
   }
   .desc {
     font-size: 2.5rem;
@@ -126,14 +98,8 @@ export const MyIntroduction = styled.div`
     color: #555555;
     font-weight: 500;
     text-align: center;
-
-    @media screen and (min-width: 320px) and (max-width: 425px) {
-      font-size: 25px;
-      text-align: center;
-    }
-    @media screen and (min-width: 425px) and (max-width: 768px) {
-      font-size: 30px;
-      text-align: center;
+    @media screen and (max-width: 600px) {
+      font-size: 2rem;
     }
   }
 `;

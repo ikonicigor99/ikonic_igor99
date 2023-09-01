@@ -6,11 +6,13 @@ import {
   MyImg,
   AboutDetailsContainer,
 } from "./AboutStyle";
+import myProfile from "../../assets/myProfile.jpeg";
 import { Title } from "../../components/Title/Title";
 import experienceIcon from "../../assets/icons/experience.png";
 import educationIcon from "../../assets/icons/education.png";
 import { HashLink as Link } from "react-router-hash-link";
 import { VariantsBox } from "../../components/variantsBox/VariantsBox";
+
 export const About = () => {
   return (
     <MainHolder id="aboutPage">
@@ -19,7 +21,9 @@ export const About = () => {
           <Title titleOne="Get To Know More" titleTwo="About Me" />
           <AboutMe>
             <div>
-              <MyImg />
+              <MyImg>
+                <img src={myProfile} />
+              </MyImg>
             </div>
             <AboutDetailsContainer>
               <div className="about-containers">

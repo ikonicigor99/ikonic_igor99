@@ -15,7 +15,10 @@ export const MainContactInfoContainer = styled.div`
   background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
-
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .contactInfoContainer {
     display: flex;
     align-items: center;
