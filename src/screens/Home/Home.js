@@ -31,7 +31,7 @@ export const Home = () => {
                   type="transp"
                   text="Download CV"
                   url={
-                    "file:///C:/Users/centar/Desktop/Igor%20Ikonic%20CV%20.pdf"
+                    "file:C:/Users/centar/Desktop/Sve/Igor Ikonic - CV .pdf"
                   }
                 />
                 <Button text="Contact Info" />

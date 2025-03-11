@@ -40,16 +40,25 @@ export const projects = [
     image: "Screenshot_1.png",
     url: "https://weather-project-theta-beryl.vercel.app/",
   },
+  {
+    name: "Mozis | PILANA",
+    path: "Mozis | PILANA",
+    image: "Mozis.PNG",
+    url: "https://mozis.vercel.app/"
+  }
 ];
 export const skillsOne = [
   { name: "HTML", img: "checkmark.png", experience: "Experienced" },
   { name: "CSS", img: "checkmark.png", experience: "Experienced" },
   { name: "JavaScript", img: "checkmark.png", experience: "Intermediate" },
   { name: "REACT", img: "checkmark.png", experience: "Intermediate" },
-  { name: "TypeScript", img: "checkmark.png", experience: "Basic" },
+  { name: "NEXTJS", img: "checkmark.png", experience: "Intermediate" },
+
+  { name: "Graphql", img: "checkmark.png", experience: "Basic" },
   { name: "SASS", img: "checkmark.png", experience: "Intermediate" },
 ];
 export const skillsTwo = [
+  { name: "Git", img: "checkmark.png", experience: "Experienced" },
   { name: "GitHub", img: "checkmark.png", experience: "Experienced" },
   { name: "SourceTree", img: "checkmark.png", experience: "Experienced" },
   { name: "Figma", img: "checkmark.png", experience: "Experienced" },

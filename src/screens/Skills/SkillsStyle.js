@@ -65,7 +65,6 @@ export const FrontendDetails = styled.div`
     article {
       display: flex;
       width: 10rem;
-      justify-content: space-around;
       gap: 0.5rem;
 
       img {
