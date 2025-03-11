@@ -53,6 +53,8 @@ export const skillsOne = [
   { name: "JavaScript", img: "checkmark.png", experience: "Intermediate" },
   { name: "REACT", img: "checkmark.png", experience: "Intermediate" },
   { name: "NEXTJS", img: "checkmark.png", experience: "Intermediate" },
+  { name: "MySQL", img: "checkmark.png", experience: "Basic" },
+  { name: "MONGODB", img: "checkmark.png", experience: "Basic" },
 
   { name: "Graphql", img: "checkmark.png", experience: "Basic" },
   { name: "SASS", img: "checkmark.png", experience: "Intermediate" },
